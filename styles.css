@@ -1,0 +1,204 @@
+/* *{margin:0} */
+header {
+    color: white;
+    text-align:center;
+}
+header h1 {
+    font-size:60px;
+    position:absolute;
+    left:27%;
+    top:8%;
+    margin: 0 auto;
+    border:white solid 5px;
+    padding:5px;
+    border-radius:20px;
+}
+header img {
+    position:relative;
+    max-width:100%;
+}
+.welcome {
+    margin:30px 0;
+    text-align:center;
+    color:rgb(70, 73, 77);
+    font-size:20px;
+}
+.banner span {
+    color:rgb(182, 182, 14);
+}
+.back-end {
+    margin:50px 0;
+    padding:50px 10px;
+    column-width:10px;
+    column-count: 2;
+    background-color:rgb(196, 196, 196);
+    text-align:center;
+}
+.back-end form input[type="submit"] {
+    width:150px;
+    height:35px;
+}
+footer {
+    color:white;
+    font-size:20px;
+    text-align:center;
+    padding:20px 0;
+    background-color: #88cefa;
+}
+form h2 {
+    text-decoration:underline;
+    margin-top:0;
+    margin-bottom:10px;
+}
+input {
+    border-radius:10px;
+    border: 1px white solid;
+}
+a[href*="create_acc"] {
+    color:rgb(126, 126, 11);
+    text-decoration:none;
+    font-size: 20px;
+    font-weight: bold;
+    font-size:30px;
+}
+body{
+    background-color:rgb(233, 234, 235);
+    margin:0;
+}
+nav {
+    background-color:#F4F4F4;
+    padding:20px;
+    position: sticky;
+    top:0px;
+}
+nav ul {
+    white-space: nowrap;
+    max-width:1200px;
+    margin: 0 auto;
+    padding:0;
+}
+nav li {
+    text-decoration: none;
+    width:33.3%;
+    display: inline-block;
+    font-size: 20px;
+    color:rgb(70, 79, 88);
+    text-align:center;
+}
+nav li a {
+    text-decoration: none;
+    color:rgb(182, 182, 14);
+}
+main {
+    max-width: 100%;
+    width:1200px;
+    margin:60px auto;
+    padding:0 40px;
+    box-sizing:border-box;
+}
+.image2 {
+    text-align:center;
+}
+.create{
+    margin:50px 0;
+    padding:50px 10px;
+    background-color:rgb(196, 196, 196);
+    text-align:center;
+    font-size:25px;
+}
+.create input {
+    height:25px;
+    width:180px;
+}
+
+/* Pesudo Classes */
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.image2 img:hover {
+    position:relative;
+    top:-4px;
+}
+.back-end form input[type="submit"]:hover {
+    border:1px solid rgb(126, 126, 11);
+}
+form input:focus {
+    border: 2px dotted rgb(126, 126, 11);
+    outline:none;
+}
+.create input:valid {
+    border: 4px green solid;
+}
+.create input[type="submit"]:valid {
+    border: none;
+}
+.create input[type="submit"]:hover {
+    border:2px solid rgb(126, 126, 11);
+}
+p::selection {
+    background-color: rgb(126, 126, 11);
+    color:white;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1125px) {
+    header h1 {
+        left:24.7%;
+        font-size:50px;
+    }
+}
+@media screen and (max-width:950px) {
+    header h1 {
+        left:22%;
+        font-size:50px;
+    }
+}
+@media screen and (max-width:800px) {
+    header h1 {
+        left:18%;
+        font-size:50px;
+    }
+}
+@media screen and (max-width:700px) {
+    header h1 {
+        left:13%;
+        top:6%;
+        font-size:50px;
+    }
+    nav ul {
+        white-space: normal;
+    }
+    nav li {
+        width:100%;
+        display: inline-block;
+        margin:10px auto;
+    }
+    .back-end {
+        column-width:0px;
+        column-count: 1;
+    }
+
+
+}
+@media screen and (max-width:650px) {
+    header h1 {
+        left:9.8%;
+        font-size:50px;
+    }
+
+}
+@media screen and (max-width:584px) {
+    header h1 {
+        left:9.8%;
+        top:4%;
+        font-size:40px;
+    }
+    .welcome {
+        font-size:15px;
+    }
+    .image2 img {
+        width:450px;
+    }
+}
