@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    display:grid;
+    grid-template-columns:6;
+    grid-auto-rows: minmax(100, auto);
+    grid-template-areas: 
+    "header . . . . nav";
+}
+header {
+    grid-area:header;
+    color:white;
+    text-align:center;
+    align-self:center;
+}
+nav {
+    grid-area:nav;
+}
+nav ul {
+    display:flex;
+}
+nav li {
+    justify-content:center;
+    list-style-type: none;
+    margin:10px;
+    padding:15px;
+}
+nav li a {
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+}
+/* #particles-js {
+    margin: 0 auto;
+    width:800px;
+    height:500px;
+} */
