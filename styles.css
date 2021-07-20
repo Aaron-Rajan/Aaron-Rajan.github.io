@@ -1,17 +1,24 @@
 * {margin:0}
 body {
-    /* background-color: black; */
     display:grid;
     grid-template-columns:6;
     grid-auto-rows: minmax(100, auto);
     font-family: sans-serif;
     grid-template-areas: 
-    "header header header header header header";
+    "header header header header header header"
+    ". main main main main .";
+}
+main {
+    margin:50px 0;
+    grid-area:main;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
 }
 header {
+    margin:10px 0;
     grid-area:header;
     color:black;
-    /* background-color:white; */
     text-align:center;
     align-self:center;
     display:grid;
@@ -59,6 +66,7 @@ nav li a {
     position:relative;
 }
 .default_a::after{
+    border-radius:10px;
     content: "";
     background: white;
       mix-blend-mode: exclusion;
@@ -73,24 +81,62 @@ nav li a {
       height: calc(100% + 8px);
 }
 a.resume {
-    background-color:#b99e00;
+    background-color:#dab900;
     color:white;
-    border:#b99e00 2px solid;
+    border:#dab900 2px solid;
     border-radius:10px;
 }
 a.resume:hover {
-    color: #b99e00;
+    transition:0.3s;
+    color: #dab900;
     background-color:white;
 }
+section.intro {
+    color:white;
+    text-align:center;
+    font-size:40px;
+    margin:40px auto;
+    align-self:center;
+    margin:50px 50px;
+}
+.wave {
+    font-size:50px;
+}
+.name {
+    color:#dab900;
+    text-transform:uppercase;
+}
+main img {
+    width:395px;
+    height:398.5px;
+}
+.wave {
+    animation-name: wave-animation;  
+    animation-duration: 2.5s;        
+    animation-iteration-count: infinite;  
+    transform-origin: 70% 70%;       
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  
+    100% { transform: rotate( 0.0deg) }
+  }
 
 #particles-js {
         background-image: url(img/black.png);
         background-size:cover;
         height:680px;
         width:1000px;
-        position:absolute;
+        z-index:-50;
+        position:fixed;
         top:0;
         left:0;
-        /* display:flex; */
         width:100%;
 }
