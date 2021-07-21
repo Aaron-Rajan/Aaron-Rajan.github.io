@@ -36,7 +36,7 @@ header h1 {
     margin:10px;
     align-self:center;
     /* background: linear-gradient(to right, #3088d0 0%, rgb(1, 1, 156) 100%); */
-    background: linear-gradient(to right, #f8ef99 0%, #FFD700 100%);
+    background: linear-gradient(#fcf3a5 0%, #FFD700 100%);
 	-webkit-background-clip: text;
     background-clip:text;
         -webkit-text-fill-color: transparent;
@@ -97,7 +97,8 @@ section.intro {
     font-size:40px;
     margin:40px auto;
     align-self:center;
-    margin:50px 50px;
+    margin:50px 0;
+    padding:50px;
 }
 .wave {
     font-size:50px;
@@ -105,10 +106,19 @@ section.intro {
 .name {
     color:#dab900;
     text-transform:uppercase;
+    font-weight:bold;
 }
 main img {
     width:395px;
-    height:398.5px;
+    height:395px;
+    transition:all 0.5s ease;
+    border:0px #dab900 solid;
+    border-radius:197.5px;
+    margin:0 50px;
+}
+main img:hover {
+    border:10px #dab900 solid;
+    transform:scale(1.07);
 }
 .wave {
     animation-name: wave-animation;  
@@ -117,17 +127,15 @@ main img {
     transform-origin: 70% 70%;       
     display: inline-block;
   }
-  
-  @keyframes wave-animation {
-      0% { transform: rotate( 0.0deg) }
-     10% { transform: rotate(14.0deg) }  
-     20% { transform: rotate(-8.0deg) }
-     30% { transform: rotate(14.0deg) }
-     40% { transform: rotate(-4.0deg) }
-     50% { transform: rotate(10.0deg) }
-     60% { transform: rotate( 0.0deg) }  
-    100% { transform: rotate( 0.0deg) }
-  }
+.icon {
+    color:#dab900;
+    margin:40px;
+    transform:scale(1.75);
+    transition:0.5s ease all;
+}
+.icon:hover {
+    color:#ffffff;
+}
 
 #particles-js {
         background-image: url(img/black.png);
@@ -139,4 +147,15 @@ main img {
         top:0;
         left:0;
         width:100%;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
 }
