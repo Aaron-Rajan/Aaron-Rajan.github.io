@@ -95,16 +95,16 @@ section.intro {
     color:white;
     text-align:center;
     font-size:40px;
-    margin:40px auto;
     align-self:center;
-    margin:50px 0;
-    padding:50px;
+    margin:5px auto;
+    padding:10px;
 }
 .wave {
     font-size:50px;
 }
 .name {
-    color:#dab900;
+    /* color:#dab900; */
+    color:#FFD700;
     text-transform:uppercase;
     font-weight:bold;
 }
@@ -114,11 +114,12 @@ main img {
     transition:all 0.5s ease;
     border:0px #dab900 solid;
     border-radius:197.5px;
-    margin:0 50px;
+    margin:0 0px;
+    box-sizing:border-box;
 }
 main img:hover {
     border:10px #dab900 solid;
-    transform:scale(1.07);
+    transform:scale(1.15);
 }
 .wave {
     animation-name: wave-animation;  
@@ -128,7 +129,7 @@ main img:hover {
     display: inline-block;
   }
 .icon {
-    color:#dab900;
+    color:#FFD700;
     margin:40px;
     transform:scale(1.75);
     transition:0.5s ease all;
@@ -138,15 +139,15 @@ main img:hover {
 }
 
 #particles-js {
-        background-image: url(img/black.png);
-        background-size:cover;
-        height:680px;
-        width:1000px;
-        z-index:-50;
-        position:fixed;
-        top:0;
-        left:0;
-        width:100%;
+    background-image: url(img/black.png);
+    background-size:cover;
+    height:100%;
+    width:100%;
+    z-index:-50;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
 }
 
 @keyframes wave-animation {
@@ -158,4 +159,17 @@ main img:hover {
    50% { transform: rotate(10.0deg) }
    60% { transform: rotate( 0.0deg) }  
   100% { transform: rotate( 0.0deg) }
+}
+
+@media screen and (max-width:1099px) {
+    main img {
+        height:50%;
+        width:50%;
+        border-radius:50%;
+    }
+}
+@media screen and (max-width:785px) {
+    header {
+        position:relative;
+    }
 }
