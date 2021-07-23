@@ -45,18 +45,18 @@ nav {
     grid-area:nav;
     background-color:transparent;
 }
-nav ul {
+ul.a_word {
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
 }
-nav li {
+ul.a_word li {
     justify-content:center;
     list-style-type: none;
     margin:10px;
     padding:15px;
 }
-nav li a {
+ul.a_word li a {
     text-decoration:none;
     color:white;
     font-size:20px;
@@ -79,6 +79,19 @@ nav li a {
 }
 .default_a:hover::after{
       height: calc(100% + 8px);
+}
+.a_icon {
+    display:none;
+}
+.icon_a {
+    color:white;
+    font-size:21px;
+    margin:10px;
+}
+.resume_icon {
+    font-size:21px;
+    color:#dab900;
+    margin:10px;
 }
 a.resume {
     background-color:#dab900;
@@ -168,8 +181,11 @@ main img:hover {
         border-radius:50%;
     }
 }
-@media screen and (max-width:785px) {
-    header {
-        position:relative;
+@media screen and (max-width:780px) {
+    ul.a_word {
+        display:none;
+    }
+    .a_icon {
+        display:flex;
     }
 }
