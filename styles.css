@@ -6,7 +6,8 @@ body {
     font-family: sans-serif;
     grid-template-areas: 
     "header header header header header header"
-    ". main main main main .";
+    ". main main main main ."
+    "about about about about about about";
 }
 main {
     margin:50px 0;
@@ -14,6 +15,7 @@ main {
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
+    /* height:80vh; */
 }
 header {
     margin:10px 0;
@@ -69,13 +71,13 @@ ul.a_word li a {
     border-radius:10px;
     content: "";
     background: white;
-      mix-blend-mode: exclusion;
+    mix-blend-mode: exclusion;
     width: calc(100% + 20px);
     height: 0;
     position: absolute;
     bottom: -4px;
     left: -10px;
-      transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 .default_a:hover::after{
       height: calc(100% + 8px);
@@ -127,7 +129,7 @@ main img {
     transition:all 0.5s ease;
     border:0px #dab900 solid;
     border-radius:197.5px;
-    margin:0 0px;
+    margin:auto 0px;
     box-sizing:border-box;
 }
 main img:hover {
@@ -149,6 +151,21 @@ main img:hover {
 }
 .icon:hover {
     color:#ffffff;
+}
+section.about h1 {
+    background: linear-gradient(#c2a500 0%, #3f3603 100%);
+	-webkit-background-clip: text;
+    background-clip:text;
+        -webkit-text-fill-color: transparent;
+}
+section.about p {
+    color:white;
+    font-size:20px;
+    text-align:center;
+    width:800px;
+    line-height:50px;
+    margin:0 auto;
+    padding:10px;
 }
 
 #particles-js {
@@ -173,6 +190,16 @@ main img:hover {
    60% { transform: rotate( 0.0deg) }  
   100% { transform: rotate( 0.0deg) }
 }
+.about {
+    grid-area:about;
+    background-color:rgba(255,255,255,0.5);
+    /* height:200px; */
+}
+.about h1 {
+    padding:20px;
+    font-size:35px;
+    text-align:center;
+}
 
 @media screen and (max-width:1099px) {
     main img {
@@ -187,5 +214,10 @@ main img:hover {
     }
     .a_icon {
         display:flex;
+    }
+}
+@media screen and (min-width:1200px) {
+    section.about {
+        transform:translateY(70px);
     }
 }
