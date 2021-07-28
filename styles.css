@@ -125,7 +125,6 @@ section.intro {
 }
 main img {
     width:395px;
-    height:395px;
     transition:all 0.5s ease;
     border:0px #dab900 solid;
     border-radius:197.5px;
@@ -162,10 +161,11 @@ section.about p {
     color:white;
     font-size:20px;
     text-align:center;
-    width:800px;
+    max-width:800px;
     line-height:50px;
     margin:0 auto;
     padding:10px;
+    overflow-wrap:break-word;
 }
 
 #particles-js {
@@ -203,7 +203,6 @@ section.about p {
 
 @media screen and (max-width:1099px) {
     main img {
-        height:50%;
         width:50%;
         border-radius:50%;
     }
@@ -221,3 +220,8 @@ section.about p {
         transform:translateY(70px);
     }
 }
+/* @media screen and (max-width:473px) {
+    section.about {
+        transform:translateY(70px);
+    }
+} */
