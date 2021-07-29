@@ -85,6 +85,9 @@ ul.a_word li a {
 .a_icon {
     display:none;
 }
+nav ul {
+    list-style-type:none;
+}
 .icon_a {
     color:white;
     font-size:21px;
@@ -220,8 +223,3 @@ section.about p {
         transform:translateY(70px);
     }
 }
-/* @media screen and (max-width:473px) {
-    section.about {
-        transform:translateY(70px);
-    }
-} */
