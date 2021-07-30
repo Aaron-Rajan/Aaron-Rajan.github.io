@@ -136,7 +136,7 @@ main img {
 }
 main img:hover {
     border:10px #dab900 solid;
-    transform:scale(1.15);
+    /* transform:scale(1.15); */
 }
 .wave {
     animation-name: wave-animation;  
