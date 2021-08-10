@@ -7,15 +7,17 @@ body {
     grid-template-areas: 
     "header header header header header header"
     ". main main main main ."
-    "about about about about about about";
+    "about about about about about about"
+    "projects projects projects projects projects projects";
 }
 main {
-    margin:50px 0;
+    box-sizing: border-box;
+    margin:5% 0 18% 0;
     grid-area:main;
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    /* height:80vh; */
+    /* height:100vh; */
 }
 header {
     margin:10px 0;
@@ -32,12 +34,13 @@ header {
     z-index:1000;
     position:sticky;
     top:0;
+    left:0;
+    width:100%;
 }
 header h1 {
     grid-area:name;
     margin:10px;
     align-self:center;
-    /* background: linear-gradient(to right, #3088d0 0%, rgb(1, 1, 156) 100%); */
     background: linear-gradient(#fcf3a5 0%, #FFD700 100%);
 	-webkit-background-clip: text;
     background-clip:text;
@@ -116,6 +119,7 @@ section.intro {
     align-self:center;
     margin:5px auto;
     padding:10px;
+    box-sizing:border-box;
 }
 .wave {
     font-size:50px;
@@ -154,9 +158,16 @@ main img:hover {
 .icon:hover {
     color:#ffffff;
 }
+section.about {
+    grid-area:about;
+    background-color:rgba(255,255,255,0.5);
+}
 section.about h1 {
-        color:white;
-        text-decoration:underline;
+    color:white;
+    text-decoration:underline;
+    padding:20px;
+    font-size:35px;
+    text-align:center;
 }
 section.about p {
     color:white;
@@ -172,6 +183,16 @@ section.about span {
     color:#FFD700;
     font-size:30px;
     font-weight:bold;
+}
+section.projects {
+    grid-area:projects;
+    margin:13% 0;
+}
+section.projects h1 {
+    color:#FFD700;
+    text-align:center;
+    padding:15px;
+    font-size:35px;
 }
 
 #particles-js {
@@ -196,16 +217,6 @@ section.about span {
    60% { transform: rotate( 0.0deg) }  
   100% { transform: rotate( 0.0deg) }
 }
-.about {
-    grid-area:about;
-    background-color:rgba(255,255,255,0.5);
-    /* height:200px; */
-}
-.about h1 {
-    padding:20px;
-    font-size:35px;
-    text-align:center;
-}
 
 @media screen and (max-width:1099px) {
     main img {
@@ -219,10 +230,5 @@ section.about span {
     }
     .a_icon {
         display:flex;
-    }
-}
-@media screen and (min-width:1200px) {
-    section.about {
-        transform:translateY(70px);
     }
 }
