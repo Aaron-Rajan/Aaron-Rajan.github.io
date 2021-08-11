@@ -15,12 +15,12 @@ body {
 }
 main {
     box-sizing: border-box;
-    margin:5% 0 15% 0;
+    margin:50px 0;
     grid-area:main;
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    height:70%;
+    /* height:70%; */
 }
 header {
     margin:10px 0;
@@ -38,7 +38,6 @@ header {
     position:sticky;
     top:0;
     left:0;
-    width:100%;
 }
 header h1 {
     grid-area:name;
