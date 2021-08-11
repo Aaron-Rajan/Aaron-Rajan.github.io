@@ -15,12 +15,12 @@ body {
 }
 main {
     box-sizing: border-box;
-    margin:5% 0 18% 0;
+    margin:5% 0 15% 0;
     grid-area:main;
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    /* height:100vh; */
+    height:70%;
 }
 header {
     margin:10px 0;
