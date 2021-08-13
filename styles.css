@@ -140,6 +140,9 @@ main img {
     margin:auto 0px;
     box-sizing:border-box;
 }
+img.image2 {
+    display:none;
+}
 main img:hover {
     border:10px #dab900 solid;
     /* transform:scale(1.15); */
@@ -196,6 +199,9 @@ section.projects h1 {
     padding:15px;
     font-size:35px;
 }
+script.vanilla {
+    display:none;
+}
 
 #particles-js {
     background-image: url(img/black.png);
@@ -232,5 +238,13 @@ section.projects h1 {
     }
     .a_icon {
         display:flex;
+    }
+}
+@media screen and (max-width:415px) {
+    img.image {
+        display:none;
+    }
+    img.image2 {
+        display:block;
     }
 }
