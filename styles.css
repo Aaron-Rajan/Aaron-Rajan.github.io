@@ -189,6 +189,10 @@ section.about span {
     font-size:30px;
     font-weight:bold;
 }
+#about {
+    position:relative;
+    top:-70px;
+}
 section.projects {
     grid-area:projects;
     margin:13% 0;
@@ -198,6 +202,10 @@ section.projects h1 {
     text-align:center;
     padding:15px;
     font-size:35px;
+}
+#projects {
+    position:relative;
+    top:-70px;
 }
 script.vanilla {
     display:none;
@@ -256,8 +264,11 @@ script.vanilla {
         display:block;
     }
 }
-/* @media screen and (min-width:1169px) {
-    header {
-        transform:translateY(-14px);
+@media screen and (max-width:1168px) and (min-width:781px) {
+    #about {
+        top:-142px;
     }
-} */
+    #projects {
+        top:-142px;
+    }
+}
