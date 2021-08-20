@@ -210,17 +210,9 @@ section.projects h1 {
 script.vanilla {
     display:none;
 }
-/* div.container {
-    grid-area:container;
-    display:grid;
-    grid-template-areas: 
-    "header header header header header header"
-    ". main main main main .";
-    min-height:100vh;
-} */
 
 #particles-js {
-    background-image: url(img/black.png);
+    background-image: url(media/black.png);
     background-size:cover;
     height:100%;
     width:100%;
