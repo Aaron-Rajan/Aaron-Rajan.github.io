@@ -204,32 +204,24 @@ section.projects h1 {
     padding:15px;
     font-size:35px;
 }
-section.projects ul {
+.cards {
     display:flex;
     list-style:none;
     justify-content:center;
-    padding:0;
     flex-wrap:wrap;
 }
-section.projects li {
+.card {
+    text-decoration:none;
     margin:20px;
     flex-grow:1;
     width:16em;
     max-width:410px;
     min-height:356px;
-    /* border:2px solid white;
-    border-radius:15px; */
-    /* padding:1px; */
 }
 section.projects h2 {
     color:white;
     text-align:center;
     padding:20px;
-}
-div.wrapper {
-    display:flex;
-    justify-content:center;
-    align-content:center;
 }
 section.projects img {
     width:100%;
@@ -294,7 +286,7 @@ section.projects img {
     }
 }
 @media screen and (min-width:917px) {
-    section.projects li {
+    .card {
         max-width:280px;
     }
 }
