@@ -219,6 +219,27 @@ section.projects h1 {
     min-height:356px;
     border:2px solid #ffd900c9;
     border-radius:10px;
+    display:grid;
+    grid-template-areas: 
+    "heading" 
+    "image"
+    "text"
+    "div";
+}
+div.card h2 {
+    grid-area:heading;
+}
+div.card img {
+    grid-area:image;
+}
+div.card p {
+    grid-area:text;
+}
+div.card div {
+    grid-area:div;
+    display:flex;
+    align-self:flex-end;
+    justify-content:center;
 }
 .card:hover {
     transform:translateY(-5px);
@@ -240,6 +261,20 @@ section.projects p {
     text-align:center;
     font-family: sans-serif;
     padding:5px;
+}
+.p_icon {
+    color:#ffff;
+    transform:scale(2);
+    margin:20px;
+}
+.p_icon:hover {
+    animation:spin 1.5s both infinite linear;
+}
+.p_img {
+    transform:translateY(13px);
+}
+.p_img:hover {
+    animation:spin_img 1.5s both infinite linear;
 }
 #projects {
     position:relative;
@@ -267,6 +302,14 @@ section.projects p {
    50% { transform: rotate(10.0deg) }
    60% { transform: rotate( 0.0deg) }  
   100% { transform: rotate( 0.0deg) }
+}
+@keyframes spin {
+    0% { transform:scale(2) rotateZ(0deg) }
+    100%{ transform: scale(2) rotateZ(360deg) }
+}
+@keyframes spin_img {
+    0% { transform: translateY(13px) rotateZ(0deg) }
+    100%{ transform: translateY(13px) rotateZ(360deg) }
 }
 
 @media screen and (max-width:1099px) {
