@@ -11,7 +11,9 @@ body {
     "header header header header header header"
     ". main main main main ."
     "about about about about about about"
-    "projects projects projects projects projects projects";
+    "projects projects projects projects projects projects"
+    "contact contact contact contact contact contact"
+    "footer footer footer footer footer footer";
 }
 main {
     min-height:90vh;
@@ -128,7 +130,6 @@ section.intro {
     font-size:50px;
 }
 .name {
-    /* color:#dab900; */
     color:#FFD700;
     text-transform:uppercase;
     font-weight:bold;
@@ -278,7 +279,45 @@ section.projects p {
 }
 #projects {
     position:relative;
+    top:-60px;
+}
+section.contact {
+    grid-area:contact;
+    height:75vh;
+}
+section.contact h1 {
+    color:#FFD700;
+    font-size:35px;
+    text-align:center;
+    margin:10px auto;
+}
+section.contact p {
+    color:white;
+    text-align:center;
+    font-size:22px;
+    padding:5px;
+}
+.c_icons {
+    font-size:25px;
+    text-align:center;
+}
+#contact {
+    position:relative;
     top:-70px;
+}
+footer {
+    grid-area:footer;
+    height:35px;
+    display:flex;
+    justify-content:flex-end;
+    align-content:center;
+    height:10vh;
+}
+.arrow {
+    color:white;
+    font-size:35px;
+    margin:20px;
+    padding:10px;
 }
 
 #particles-js {
