@@ -50,6 +50,11 @@ header h1 {
 	-webkit-background-clip: text;
     background-clip:text;
         -webkit-text-fill-color: transparent;
+    transition:0.5s ease;
+}
+header h1:hover {
+    transform:scale(1.1);
+    /* text-shadow:2px 2px 2px #ffe75dc9; */
 }
 nav {
     grid-area:nav;
@@ -147,6 +152,10 @@ img.image2 {
 }
 main img:hover {
     border:10px #dab900 solid;
+}
+main .image2:hover {
+    transform:scale(1.25);
+    border:7px #dab900 solid;
 }
 .wave {
     animation-name: wave-animation;  
@@ -318,6 +327,12 @@ footer {
     font-size:35px;
     margin:20px;
     padding:10px;
+    transition:0.5s ease;
+    box-sizing:border-box;
+}
+.arrow:hover {
+    transform:scale(1.25);
+    color:#FFD700;
 }
 
 #particles-js {
