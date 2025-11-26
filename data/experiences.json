@@ -25,7 +25,7 @@
   "location" : "Hamilton, Ontario",
   "startDate" : "Sep 2024",
   "endDate" : "Dec 2024",
-  "description" : "Led tutorials and helped students with design projects, prototyping and programming.",
+  "description" : "Instructed students in engineering concepts ranging from programming in Python to prototyping designs, and graded assignments on topics including Python, AutoCAD, Raspberry Pi, and engineering design principles while providing detailed feedback to promote learning.",
   "tech" : "Python, MATLAB, Communication, Mentorship",
   "link" : null
 }, {
@@ -35,7 +35,7 @@
   "location" : "Hamilton, Ontario",
   "startDate" : "Jan 2025",
   "endDate" : "Apr 2025",
-  "description" : "Led tutorials and helped students with design projects, prototyping and programming.",
+  "description" : "Instructed students in Python programming within virtual environments, guiding them to simulate real-world traffic intersection systems and apply software development best practices, and evaluated their engineering project reports and presentations with detailed feedback to refine their technical work and improve the quality of their final deliverables.",
   "tech" : "Python, MATLAB, Communication, Mentorship",
   "link" : null
 }, {
@@ -45,7 +45,7 @@
   "location" : "Hamilton, Ontario",
   "startDate" : "Jan 2025",
   "endDate" : "Apr 2025",
-  "description" : "Led tutorials and helped students with design projects, prototyping and programming.",
+  "description" : "Taught engineering concepts to students which consisted of programming in Python, C, as well as Linux, AI applications in the real-world, and creating project reports.",
   "tech" : "Python, MATLAB, Communication, Mentorship",
   "link" : null
 }, {
@@ -55,7 +55,7 @@
   "location" : "Hamilton, Ontario",
   "startDate" : "Jan 2024",
   "endDate" : "Apr 2024",
-  "description" : "Led tutorials and helped students with design projects, prototyping and programming.",
+  "description" : "Taught engineering concepts to students which consisted of programming in Python, C, as well as Linux, AI applications in the real-world, and creating project reports.",
   "tech" : "Python, MATLAB, Communication, Mentorship",
   "link" : null
 }, {
@@ -75,7 +75,7 @@
   "location" : "Hamilton, Ontario",
   "startDate" : "Jan 2024",
   "endDate" : "Apr 2024",
-  "description" : "Led tutorials and helped students with design projects, prototyping and programming.",
+  "description" : "Instructed students in engineering concepts ranging from programming in Python to prototyping designs, and graded assignments on topics including Python, AutoCAD, Raspberry Pi, and engineering design principles while providing detailed feedback to promote learning.",
   "tech" : "Python, MATLAB, Communication, Mentorship",
   "link" : null
 }, {
@@ -85,8 +85,8 @@
   "location" : "Hamilton, Ontario",
   "startDate" : "Aug 2023",
   "endDate" : "Apr 2024",
-  "description" : "TODO",
-  "tech" : "TODO",
+  "description" : "Coordinated between Ciena and McMaster University to organize on-campus events, share information about Ciena opportunities, and speak with students about my experiences working at Ciena.",
+  "tech" : "Responsibility, Organization, Management, Communication",
   "link" : "https://www.ciena.ca/"
 }, {
   "id" : 12,
@@ -95,8 +95,8 @@
   "location" : "Toronto, Ontario",
   "startDate" : "Jun 2021",
   "endDate" : "Sep 2021",
-  "description" : "TODO",
-  "tech" : "TODO",
+  "description" : "Developed interpersonal skills by supervising and interacting with 100+ building residents weekly, while handling responsibility by maintaining pool chemical composition and ensuring the safety of swimmers",
+  "tech" : "Responsibility, Organization, Management, Communication",
   "link" : "https://pplgroup.com/"
 }, {
   "id" : 13,

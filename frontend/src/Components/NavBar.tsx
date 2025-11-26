@@ -1,5 +1,6 @@
 import Button from "./Button";
 import "../styles/NavBar.css";
+import Resume from "../assets/Resume.pdf";
 
 const NavBar = () => {
     return (
@@ -9,6 +10,7 @@ const NavBar = () => {
                 <Button someText='Home' link='/'></Button>
                 <Button someText='Experience' link='/experience'></Button>
                 <Button someText='Projects' link='/projects'></Button>
+                <Button someText='Resume' link={Resume}></Button>
             </div>
         </div>
     );

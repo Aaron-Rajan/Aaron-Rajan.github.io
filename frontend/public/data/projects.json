@@ -82,11 +82,4 @@
   "description" : "This portfolio uses React + TypeScript on the front end with custom CSS and Font Awesome for styling. Data for projects and experience is fetched via Axios from JSON files, which is managed through a local Spring Boot backend that updates those JSON files behind the scenes.",
   "imageName" : "Website.png",
   "demo" : "https://aaron-rajan.github.io/"
-}, {
-  "id" : 13,
-  "name" : "Ride-Sharing/Delivery App",
-  "link" : "https://github.com/Aaron-Rajan/RideSharing-DeliveryApp",
-  "description" : "TEST",
-  "imageName" : "DeliveryApp.png",
-  "demo" : null
 } ]

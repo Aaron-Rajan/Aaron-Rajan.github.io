@@ -47,12 +47,13 @@ const About = () => {
           <strong>Computer Engineering &amp; Management</strong> graduate from{" "}
           <strong>McMaster University</strong>, now working as a{" "}
           <strong>Software Developer</strong> at{" "}
-          <strong>Intact Insurance</strong>. On the{" "}
-          <strong>Developer Platforms &amp; DevOps Centre of Excellence</strong>{" "}
-          team, I build and support tools that help other developers ship
-          reliable software—mainly using <strong>Java</strong>,{" "}
-          <strong>Spring Boot</strong>, <strong>React</strong>, and{" "}
-          <strong>TypeScript</strong>.
+          <strong>Intact Insurance</strong>. I've gained experience across
+          finance and telecom through roles at companies like{" "}
+          <strong>Scotiabank</strong> and <strong>Ciena</strong>, where I supported
+          full-stack development and performance tooling. I’m proficient in{" "}
+          <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>React</strong>,{" "}
+          <strong>TypeScript</strong>, <strong>NodeJS</strong>, <strong>Python</strong>, and <strong>SQL</strong>, and enjoy building
+          reliable, developer-friendly software.
         </p>
 
         <p>

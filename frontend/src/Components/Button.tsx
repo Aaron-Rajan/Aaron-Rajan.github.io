@@ -9,7 +9,11 @@ const Button: React.FC<ButtonProps> = ({ someText, link }) => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate(link);
+        if (link.startsWith("http") || link.endsWith(".pdf")) {
+            window.open(link, "_blank", "noopener,noreferrer");
+        } else {
+            navigate(link);
+        }
     };
 
     return (
