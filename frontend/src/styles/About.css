@@ -15,7 +15,7 @@
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;   /* ⬅ stack picture, text, icons vertically */
+  flex-direction: column;   /* stack picture, text, icons vertically */
   align-items: center;      /* center them horizontally */
   gap: 1.5rem;
   text-align: center;       /* center the greeting text */
@@ -42,6 +42,24 @@
   margin: 0;
   font-size: 1.4rem;
   line-height: 1.6;
+}
+
+/* waving hand */
+.wave {
+  display: inline-block;
+  transform-origin: 70% 70%;        /* pivot around the “wrist” */
+  animation: wave 1.6s ease-in-out infinite;
+  margin-left: 0.25rem;
+}
+
+@keyframes wave {
+  0%   { transform: rotate(0deg); }
+  15%  { transform: rotate(14deg); }
+  30%  { transform: rotate(-8deg); }
+  40%  { transform: rotate(14deg); }
+  50%  { transform: rotate(-4deg); }
+  60%  { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
 }
 
 .name {
@@ -95,7 +113,7 @@
 
 .about-description {
   max-width: 1000px;       /* same width as hero row */
-  margin: 3rem auto 0;     /* put it *below* and centered */
+  margin: 3rem auto 0;     /* put it below and centered */
   font-size: 1.05rem;
   line-height: 1.7;
   text-align: left;
