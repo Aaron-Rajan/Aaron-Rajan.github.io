@@ -1,0 +1,92 @@
+[ {
+  "id" : 1,
+  "name" : "Management System",
+  "link" : "https://github.com/Aaron-Rajan/Management-System",
+  "description" : "An employee management system created with Java File I/O to keep track of the names, IDs, and wages of employees.",
+  "imageName" : "Management.png",
+  "demo" : null
+}, {
+  "id" : 2,
+  "name" : "Recycling System",
+  "link" : "https://rajana8.wixsite.com/1p13portfolio/dp-3",
+  "description" : "A recycling system developed in Python which is capable of classifying and disposing of containers using a Q-arm and Q-bot in Quanser Interactive Labs.",
+  "imageName" : "Recycle.png",
+  "demo" : null
+}, {
+  "id" : 3,
+  "name" : "Currency Converter",
+  "link" : "https://github.com/Aaron-Rajan/Currency-Coverter",
+  "description" : "A currency converter created using Java, JSON files, and an API system. An interactive UI/UX was developed using Java Swing.",
+  "imageName" : "Currency.png",
+  "demo" : null
+}, {
+  "id" : 4,
+  "name" : "Heart Pacemaker",
+  "link" : "https://github.com/Aaron-Rajan/3K04Pacemaker",
+  "description" : "A heart pacemaker capable of regulating a patient's heart rate using different configurations created with MATLAB Simulink and Python.",
+  "imageName" : "Pacemaker.png",
+  "demo" : null
+}, {
+  "id" : 5,
+  "name" : "Spatial Mapping System",
+  "link" : "https://github.com/Aaron-Rajan/Spatial_Mapping_System",
+  "description" : "An embedded spatial mapping solution utilizing the VL53L1X Time-of-Flight sensor and ESP32 microcontroller to capture and visualize 3D environments.",
+  "imageName" : "MappingSystem.png",
+  "demo" : null
+}, {
+  "id" : 6,
+  "name" : "Autononmous Vehicle System",
+  "link" : "https://github.com/Aaron-Rajan/Autonomous_Vehicle_System",
+  "description" : "A C++ and Python-based autonomous vehicle prototype featuring real-time camera sensing, object detection, and obstacle avoidance.",
+  "imageName" : "AutoVehicle.png",
+  "demo" : null
+}, {
+  "id" : 7,
+  "name" : "Self-Sustaining Intelligent Greenhouse (SSIG)",
+  "link" : "https://github.com/Aaron-Rajan/AutoGreenHouse",
+  "description" : "An AI-powered smart greenhouse system that monitors and controls temperature, pH, and moisture using sensor data and actuator automation. Built with ESP32, Flask, MySQL (AWS), and real-time cloud integration.",
+  "imageName" : "AutoGreenhouse.png",
+  "demo" : null
+}, {
+  "id" : 8,
+  "name" : "Restful Job Board",
+  "link" : "https://github.com/Aaron-Rajan/Job_Board_API",
+  "description" : "A full-stack web app for managing and viewing job listings, built with Spring Boot, PostgreSQL, and React. It features a RESTful API with Swagger docs, a clean frontend UI, and is fully containerized using Docker and Docker Compose.",
+  "imageName" : null,
+  "demo" : null
+}, {
+  "id" : 9,
+  "name" : "Note Application",
+  "link" : "https://github.com/Aaron-Rajan/NoteApp",
+  "description" : "Developed a note taking app using Node.js (Express) REST API with MongoDB (Mongoose), styled using HTML/CSS and React JS (Vite).",
+  "imageName" : null,
+  "demo" : null
+}, {
+  "id" : 10,
+  "name" : "Account-Customer Management System",
+  "link" : "https://github.com/Aaron-Rajan/Account-CustomerManagement",
+  "description" : "Clean architecture Spring Boot app for customer and account lifecycles—repositories, services, controllers—powered by JPA and PostgreSQL.",
+  "imageName" : "AccountCustomer.png",
+  "demo" : null
+}, {
+  "id" : 11,
+  "name" : "Ride-Sharing/Delivery App",
+  "link" : "https://github.com/Aaron-Rajan/RideSharing-DeliveryApp",
+  "description" : "Simulates a ride-sharing and delivery platform. It uses Eureka for service discovery, a distance microservice, and a main app that manages users, trips, vehicles, and ratings.",
+  "imageName" : "DeliveryApp.png",
+  "demo" : null
+}, {
+  "id" : 12,
+  "name" : "Personal Portfolio",
+  "link" : "https://github.com/Aaron-Rajan/Aaron-Rajan.github.io",
+  "description" : "This portfolio uses React + TypeScript on the front end with custom CSS and Font Awesome for styling. Data for projects and experience is fetched via Axios from JSON files, which is managed through a local Spring Boot backend that updates those JSON files behind the scenes.",
+  "imageName" : "Website.png",
+  "demo" : "https://aaron-rajan.github.io/"
+}, {
+  "id" : 13,
+  "name" : "Ride-Sharing/Delivery App",
+  "link" : "https://github.com/Aaron-Rajan/RideSharing-DeliveryApp",
+  "description" : "TEST",
+  "imageName" : "DeliveryApp.png",
+  "demo" : null
+} ]

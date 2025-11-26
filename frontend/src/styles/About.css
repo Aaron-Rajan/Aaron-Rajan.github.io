@@ -1,0 +1,140 @@
+:root {
+  --accent: #ffd600;
+}
+
+/* Whole section */
+.about {
+  padding: 0.5rem 1.5rem 4rem;
+}
+
+/* ===========================
+   HERO ROW (photo + intro)
+   =========================== */
+
+.about-hero {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;   /* ⬅ stack picture, text, icons vertically */
+  align-items: center;      /* center them horizontally */
+  gap: 1.5rem;
+  text-align: center;       /* center the greeting text */
+}
+
+/* photo */
+.about-photo {
+  width: 260px;
+  height: auto;
+  border-radius: 24px;
+  border: 4px solid var(--accent);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* right-hand part of hero row */
+.about-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.about-greeting {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.name {
+  font-weight: 700;
+}
+
+/* ===========================
+   SOCIAL ICONS
+   =========================== */
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background-color: var(--accent);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  transition:
+    background-color 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.social-links i {
+  font-size: 1.6rem;
+  color: #000;
+}
+
+.social-links a:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+.social-links a:hover i {
+  color: var(--accent);
+}
+
+/* ===========================
+   ABOUT TEXT (below hero)
+   =========================== */
+
+.about-description {
+  max-width: 1000px;       /* same width as hero row */
+  margin: 3rem auto 0;     /* put it *below* and centered */
+  font-size: 1.05rem;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.about-description h1 {
+  font-size: 2.4rem;
+  margin: 0 0 1rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* spacing between paragraphs */
+.about-description p + p {
+  margin-top: 0.9rem;
+}
+
+/* highlight key terms */
+.about-description strong {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+/* @media (max-width: 768px) {
+  .about-hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-intro {
+    align-items: center;
+  }
+
+  .about-description {
+    text-align: center;
+  }
+} */

@@ -1,0 +1,72 @@
+###############################
+# FRONTEND (React / Vite)     #
+###############################
+
+# Dependencies
+/frontend/node_modules/
+/frontend/jspm_packages/
+
+# Build output
+/frontend/dist/
+/frontend/build/
+/frontend/.vite/
+/frontend/.cache/
+/frontend/.parcel-cache/
+/frontend/.next/
+/frontend/.out/
+
+# Env files (keep secrets out of git)
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# Logs
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+/frontend/pnpm-debug.log*
+/frontend/bun-debug.log*
+/frontend/*.log
+
+# Tests / coverage
+/frontend/coverage/
+/frontend/.vitest/
+/frontend/jest-coverage/
+/frontend/.nyc_output/
+
+# Tooling caches
+/frontend/.eslintcache
+/frontend/.stylelintcache
+/frontend/*.tsbuildinfo
+
+###############################
+# BACKEND (if you use it)     #
+###############################
+# Uncomment / adjust depending on what backend is:
+# Java / Maven
+#/backend/target/
+#/backend/.mvn/wrapper/maven-wrapper.jar
+
+# Node backend
+#/backend/node_modules/
+#/backend/dist/
+#/backend/build/
+#/backend/*.log
+
+###############################
+# OS / Editor junk            #
+###############################
+.DS_Store
+Thumbs.db
+
+.idea/
+.vscode/
+*.swp
+*.swo
+
+###############################
+# Misc                        #
+###############################
+*.local

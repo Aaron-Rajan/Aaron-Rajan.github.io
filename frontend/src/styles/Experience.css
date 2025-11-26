@@ -1,0 +1,251 @@
+:root {
+  --accent: #ffd600;
+}
+
+/* =========================
+   EXPERIENCE SECTION
+   ========================= */
+
+.experience-section {
+  padding: 0.5rem 0 4rem;  /* full-width bg, no side padding */
+}
+
+/* heading is constrained + centered to match the timeline width */
+.experience-heading {
+  width: 80%;
+  margin: 0 auto 3rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* =========================
+   TIMELINE LAYOUT
+   ========================= */
+
+.timeline {
+  position: relative;
+  width: 80%;          /* takes 80% of viewport */
+  margin: 0 auto;      /* centered */
+  padding: 2rem 0 4rem;
+}
+
+/* vertical line down the center of this 80% container */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  background: #333;
+  z-index: 0;
+}
+
+/* each row: 2-column grid: [left side] [right side] */
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;        /* helps keep row content centered vertically */
+  margin: 3rem 0;
+  width: 100%;
+}
+
+/* =========================
+   CARDS
+   ========================= */
+
+.timeline-card {
+  background: #1f1f1f;
+  color: #fff;
+  border-radius: 18px;
+  padding: 1.5rem 1.8rem;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.6);
+  position: relative;
+  z-index: 1;                 /* above the line */
+  max-width: 40rem;           /* same as before */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* odd items: card on LEFT side, extending outward */
+.timeline-item:nth-child(odd) .timeline-card {
+  grid-column: 1 / 2;
+  justify-self: end;          /* right edge towards the center line */
+  margin-right: 3rem;         /* gap from icon/line */
+}
+
+/* even items: card on RIGHT side, extending outward */
+.timeline-item:nth-child(even) .timeline-card {
+  grid-column: 2 / 3;
+  justify-self: start;        /* left edge towards the center line */
+  margin-left: 3rem;
+}
+
+/* notch pointing toward the line */
+.timeline-item:nth-child(odd) .timeline-card::before,
+.timeline-item:nth-child(even) .timeline-card::before {
+  content: "";
+  position: absolute;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+}
+
+.timeline-item:nth-child(odd) .timeline-card::before {
+  right: -20px;
+  border-left-color: #1f1f1f;
+}
+
+.timeline-item:nth-child(even) .timeline-card::before {
+  left: -20px;
+  border-right-color: #1f1f1f;
+}
+
+/* =========================
+   ICON ON CENTER LINE
+   ========================= */
+
+/* One icon per row, always on the center line, vertically centered
+   relative to that row's content (i.e., its card). */
+.timeline-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);   /* center on the row */
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 4px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.timeline-icon i {
+  color: #000;
+  font-size: 1.7rem;
+}
+
+/* =========================
+   TEXT INSIDE CARD
+   ========================= */
+
+.exp-role {
+  margin: 0 0 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.exp-company {
+  margin: 0 0 0.7rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.exp-location {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #f3c3c3;
+}
+
+.exp-dates {
+  margin: 0 0 0.9rem;
+  font-size: 0.9rem;
+  color: #bbbbbb;
+}
+
+.exp-description {
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+}
+
+.exp-tech {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   EXPERIENCE CARD LINK ICON
+   ========================= */
+
+.exp-links {
+  margin-top: 0.9rem;
+  display: flex;
+  justify-content: center;
+}
+
+.exp-links a {
+  font-size: 1.1rem;            /* similar size to project icons */
+  color: #fff;
+  display: inline-block;
+}
+
+.exp-links a:hover {
+  animation: spin-exp-link 1.5s both infinite linear;
+}
+
+@keyframes spin-exp-link {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 900px) {
+  .experience-heading {
+    width: 90%;
+    text-align: center;
+  }
+
+  .timeline {
+    width: 90%;
+  }
+
+  .timeline::before {
+    left: 24px;
+    transform: none;
+  }
+
+  /* Stacked layout: icon on the left, card on the right */
+  .timeline-item {
+    grid-template-columns: 80px 1fr;
+    align-items: flex-start;
+  }
+
+  .timeline-card {
+    grid-column: 2 / 3;
+    justify-self: stretch;
+    max-width: none;
+    margin: 0 0 0 1.25rem;
+  }
+
+  .timeline-icon {
+    position: static;
+    transform: none;
+    width: 56px;
+    height: 56px;
+    border-width: 3px;
+    margin-top: 0.5rem;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-card::before,
+  .timeline-item:nth-child(even) .timeline-card::before {
+    left: -20px;
+    right: auto;
+    border-right-color: #1f1f1f;
+    border-left-color: transparent;
+  }
+}

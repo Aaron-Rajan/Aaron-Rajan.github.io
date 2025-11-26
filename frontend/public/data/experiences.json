@@ -1,0 +1,111 @@
+[ {
+  "id" : 2,
+  "company" : "Ciena",
+  "role" : "Software Intern – Emebdded Security",
+  "location" : "Ottawa, Ontario",
+  "startDate" : "May 2023",
+  "endDate" : "Aug 2023",
+  "description" : "Developed and optimized automated test suites for network hardware using Python, C, and Linux tools within a CI/CD pipeline.",
+  "tech" : "Python, C, Linux, YANG",
+  "link" : "https://www.ciena.ca/"
+}, {
+  "id" : 3,
+  "company" : "Ciena",
+  "role" : "Software Intern – Waveserver Software",
+  "location" : "Ottawa, Ontario",
+  "startDate" : "May 2022",
+  "endDate" : "Aug 2022",
+  "description" : "Built and optimized automated network test suites using Python, C, YANG, and Linux tools, validating hardware changes and RESTful APIs within the team’s CI/CD pipeline.",
+  "tech" : "Python, C, Linux, YANG",
+  "link" : "https://www.ciena.ca/"
+}, {
+  "id" : 4,
+  "company" : "McMaster University",
+  "role" : "Undergraduate Teaching Assistant – ENGINEER 1P13",
+  "location" : "Hamilton, Ontario",
+  "startDate" : "Sep 2024",
+  "endDate" : "Dec 2024",
+  "description" : "Led tutorials and helped students with design projects, prototyping and programming.",
+  "tech" : "Python, MATLAB, Communication, Mentorship",
+  "link" : null
+}, {
+  "id" : 5,
+  "company" : "McMaster University",
+  "role" : "Undergraduate Teaching Assistant – ENGINEER 3PX3",
+  "location" : "Hamilton, Ontario",
+  "startDate" : "Jan 2025",
+  "endDate" : "Apr 2025",
+  "description" : "Led tutorials and helped students with design projects, prototyping and programming.",
+  "tech" : "Python, MATLAB, Communication, Mentorship",
+  "link" : null
+}, {
+  "id" : 6,
+  "company" : "McMaster University",
+  "role" : "Undergraduate Teaching Assistant – ENGINEER 2PX3",
+  "location" : "Hamilton, Ontario",
+  "startDate" : "Jan 2025",
+  "endDate" : "Apr 2025",
+  "description" : "Led tutorials and helped students with design projects, prototyping and programming.",
+  "tech" : "Python, MATLAB, Communication, Mentorship",
+  "link" : null
+}, {
+  "id" : 7,
+  "company" : "McMaster University",
+  "role" : "Undergraduate Teaching Assistant – ENGINEER 2PX3",
+  "location" : "Hamilton, Ontario",
+  "startDate" : "Jan 2024",
+  "endDate" : "Apr 2024",
+  "description" : "Led tutorials and helped students with design projects, prototyping and programming.",
+  "tech" : "Python, MATLAB, Communication, Mentorship",
+  "link" : null
+}, {
+  "id" : 9,
+  "company" : "Scotiabank",
+  "role" : "Software Developer Intern – Global Risk Warehouse",
+  "location" : "Toronto, Ontario",
+  "startDate" : "May 2024",
+  "endDate" : "August 2024",
+  "description" : "Developed automation tools and full-stack applications to support team's workflow.",
+  "tech" : "Python, Java, Spring, JavaScript, SQL",
+  "link" : "https://www.gbm.scotiabank.com/en/services/risk-management.html"
+}, {
+  "id" : 10,
+  "company" : "McMaster University",
+  "role" : "Undergraduate Teaching Assistant – ENGINEER 1P13",
+  "location" : "Hamilton, Ontario",
+  "startDate" : "Jan 2024",
+  "endDate" : "Apr 2024",
+  "description" : "Led tutorials and helped students with design projects, prototyping and programming.",
+  "tech" : "Python, MATLAB, Communication, Mentorship",
+  "link" : null
+}, {
+  "id" : 11,
+  "company" : "Ciena",
+  "role" : "Campus Ambassador",
+  "location" : "Hamilton, Ontario",
+  "startDate" : "Aug 2023",
+  "endDate" : "Apr 2024",
+  "description" : "TODO",
+  "tech" : "TODO",
+  "link" : "https://www.ciena.ca/"
+}, {
+  "id" : 12,
+  "company" : "PPL Aquatic",
+  "role" : "Head Lifeguard",
+  "location" : "Toronto, Ontario",
+  "startDate" : "Jun 2021",
+  "endDate" : "Sep 2021",
+  "description" : "TODO",
+  "tech" : "TODO",
+  "link" : "https://pplgroup.com/"
+}, {
+  "id" : 13,
+  "company" : "Intact Insurance - Developer Platforms & DevOps",
+  "role" : "Software Developer",
+  "location" : "Toronto, Ontario",
+  "startDate" : "Nov 2025",
+  "endDate" : "Present",
+  "description" : "TODO",
+  "tech" : "Java, Spring Boot, ReactJS, NodeJS, CI/CD",
+  "link" : "https://www.intact.ca/en/personal-insurance"
+} ]

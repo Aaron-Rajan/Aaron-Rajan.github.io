@@ -1,0 +1,82 @@
+/* remove default body margin so the navbar touches the top */
+body {
+  margin: 0;
+}
+
+/* top navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;   /* left + right hug edges */
+  align-items: center;              /* vertical centering */
+
+  padding: 2.5rem 2.25rem;
+  background-color: #181818;
+  z-index: 1000;
+}
+
+/* left side (name) */
+.navbar-left {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+  cursor: pointer;
+
+  /* fix clipped descender */
+  line-height: 1.2;          /* ⬅ more vertical room */
+  padding-bottom: 0.2rem;    /* ⬅ pushes bottom edge down a bit */
+
+  /* animated gradient text */
+  background: linear-gradient(90deg, #ffffff, #ffd600, #ffffff);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  transition:
+    background-position 0.4s ease,
+    transform 0.2s ease;
+}
+
+/* underline that slides in on hover */
+.navbar-left::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.35rem;          /* ⬅ move underline slightly lower */
+  height: 3px;
+  width: 0;
+  background: #ffd600;
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.navbar-left:hover {
+  background-position: 100% 0;
+  transform: translateY(-1px);
+}
+
+.navbar-left:hover::after {
+  width: 100%;
+}
+
+/* right side (buttons) */
+.navbar-right {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navbar-right button {
+  padding: 0.3rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #fff;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}

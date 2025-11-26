@@ -1,0 +1,135 @@
+:root {
+  --accent: #ffd600;
+}
+
+/* =========================
+   PROJECTS SECTION
+   ========================= */
+
+.projects-section {
+  padding: 3rem 0 4rem;
+}
+
+.projects-heading {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #ffd600;
+}
+
+/* =========================
+   GRID
+   ========================= */
+
+.projects-grid {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+/* =========================
+   CARD
+   ========================= */
+
+.project-card {
+  background: #000;
+  border: 2px solid var(--accent);
+  border-radius: 14px;
+  width: 270px;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  /* no glow by default */
+  box-shadow: none;
+
+  /* smooth hover animation */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* glow + lift only on hover */
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 32px rgba(255, 214, 0, 0.95);
+}
+
+/* top title bar */
+.project-title {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  border-bottom: 2px solid var(--accent);
+}
+
+/* image area */
+.project-image-wrapper {
+  background: #111;
+}
+
+.project-image {
+  width: 100%;
+  display: block;
+}
+
+/* description */
+.project-description {
+  flex: 1;
+  padding: 0.9rem 1rem;
+  font-size: 0.95rem;
+  color: #ffffff;
+  text-align: left;
+}
+
+/* bottom icon row */
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 0.8rem 0.6rem 1rem;
+}
+
+.project-links a {
+  font-size: 2.0rem;
+  color: #fff;
+  display: inline-block;       /* required for transform/animation */
+  margin: 10px 0;
+}
+
+/* only icons rotate on hover */
+.project-links a:hover {
+  animation: spin-icon 1.5s both infinite linear;
+}
+
+/* rotation animation for icons */
+@keyframes spin-icon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 900px) {
+  .projects-grid {
+    width: 90%;
+    gap: 1.8rem;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
