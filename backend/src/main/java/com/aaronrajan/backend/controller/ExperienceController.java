@@ -26,4 +26,14 @@ public class ExperienceController {
     public ResponseEntity<Experience> addExperience(@RequestBody Experience experience) {
         return ResponseEntity.ok(jsonFileService.addExperience(experience));
     }
+
+    @DeleteMapping("{id}")
+    public void deleteExperience(@PathVariable long id) {
+        jsonFileService.deleteExperience(id);
+    }
+
+    @PutMapping("{id}")
+    public ResponseEntity<Experience> updateProject(@PathVariable long id, @RequestBody Experience experience) {
+        return ResponseEntity.ok(jsonFileService.updateExperience(id, experience));
+    }
 }

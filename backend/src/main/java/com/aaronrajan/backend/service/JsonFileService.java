@@ -58,6 +58,8 @@ public class JsonFileService {
         }
     }
 
+    // ===== EXPERIENCES =====
+
     public List<Experience> getExperiences() {
         return readList(EXPERIENCE_PATH, Experience[].class);
     }
@@ -88,6 +90,38 @@ public class JsonFileService {
         return experience;
     }
 
+    /** Update an existing experience by id */
+    public Experience updateExperience(long id, Experience updated) {
+        List<Experience> experiences = getExperiences();
+
+        for (int i = 0; i < experiences.size(); i++) {
+            Experience current = experiences.get(i);
+            if (current.getId() != null && current.getId() == id) {
+                // keep the original id, ignore any id coming from the client
+                updated.setId(current.getId());
+                experiences.set(i, updated);
+                saveExperiences(experiences);
+                return updated;
+            }
+        }
+
+        throw new IllegalArgumentException("Experience with id " + id + " not found");
+    }
+
+    /** Delete an experience by id */
+    public void deleteExperience(long id) {
+        List<Experience> experiences = getExperiences();
+        boolean removed = experiences.removeIf(
+                e -> e.getId() != null && e.getId() == id
+        );
+
+        if (!removed) {
+            throw new IllegalArgumentException("Experience with id " + id + " not found");
+        }
+
+        saveExperiences(experiences);
+    }
+
     // ===== PROJECTS =====
 
     public List<Project> getProjects() {
@@ -111,5 +145,36 @@ public class JsonFileService {
         saveProjects(projects);
 
         return project;
+    }
+
+    /** Update an existing project by id */
+    public Project updateProject(long id, Project updated) {
+        List<Project> projects = getProjects();
+
+        for (int i = 0; i < projects.size(); i++) {
+            Project current = projects.get(i);
+            if (current.getId() != null && current.getId() == id) {
+                updated.setId(current.getId());
+                projects.set(i, updated);
+                saveProjects(projects);
+                return updated;
+            }
+        }
+
+        throw new IllegalArgumentException("Project with id " + id + " not found");
+    }
+
+    /** Delete a project by id */
+    public void deleteProject(long id) {
+        List<Project> projects = getProjects();
+        boolean removed = projects.removeIf(
+                p -> p.getId() != null && p.getId() == id
+        );
+
+        if (!removed) {
+            throw new IllegalArgumentException("Project with id " + id + " not found");
+        }
+
+        saveProjects(projects);
     }
 }

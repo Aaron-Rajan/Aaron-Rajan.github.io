@@ -1,17 +1,13 @@
-:root {
-  --accent: #ffd600;
-}
-
 /* Whole section */
 .about {
   padding: 0.5rem 1.5rem 4rem;
 }
 
 /* ===========================
-   HERO ROW (photo + intro)
+   WELCOME ROW (photo + intro)
    =========================== */
 
-.about-hero {
+.about-welcome {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
@@ -31,7 +27,6 @@
   flex-shrink: 0;
 }
 
-/* right-hand part of hero row */
 .about-intro {
   display: flex;
   flex-direction: column;
@@ -107,12 +102,8 @@
   color: var(--accent);
 }
 
-/* ===========================
-   ABOUT TEXT (below hero)
-   =========================== */
-
 .about-description {
-  max-width: 1000px;       /* same width as hero row */
+  max-width: 1000px;      
   margin: 3rem auto 0;     /* put it below and centered */
   font-size: 1.05rem;
   line-height: 1.7;
@@ -136,23 +127,3 @@
   font-weight: 600;
   color: var(--accent);
 }
-
-/* ===========================
-   RESPONSIVE
-   =========================== */
-
-/* @media (max-width: 768px) {
-  .about-hero {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .about-intro {
-    align-items: center;
-  }
-
-  .about-description {
-    text-align: center;
-  }
-} */

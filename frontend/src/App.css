@@ -1,3 +1,14 @@
 .page-content {
   padding-top: 10rem;  /* slightly bigger than navbar height */
 }
+
+:root {
+  --accent: #ffd600;
+  --page-bg: #242424;
+}
+
+body {
+  margin: 0;
+  background-color: var(--page-bg);
+  color: #f5f5f5;  /* <- make default text light */
+}

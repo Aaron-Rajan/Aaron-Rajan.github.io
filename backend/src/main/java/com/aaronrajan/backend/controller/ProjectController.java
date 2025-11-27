@@ -26,4 +26,14 @@ public class ProjectController {
     public ResponseEntity<Project> addProject(@RequestBody Project project) {
         return ResponseEntity.ok(jsonFileService.addProject(project));
     }
+
+    @DeleteMapping("{id}")
+    public void deleteProject(@PathVariable long id) {
+        jsonFileService.deleteProject(id);
+    }
+
+    @PutMapping("{id}")
+    public ResponseEntity<Project> updateProject(@PathVariable long id, @RequestBody Project project) {
+        return ResponseEntity.ok(jsonFileService.updateProject(id, project));
+    }
 }

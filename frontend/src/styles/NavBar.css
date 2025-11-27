@@ -1,9 +1,7 @@
-/* remove default body margin so the navbar touches the top */
-body {
-  margin: 0;
-}
+/* =========================
+   NAVBAR
+   ========================= */
 
-/* top navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -11,10 +9,10 @@ body {
   right: 0;
 
   display: flex;
-  justify-content: space-between;   /* left + right hug edges */
-  align-items: center;              /* vertical centering */
+  justify-content: space-between;
+  align-items: center;
 
-  padding: 2.5rem 2.25rem;
+  padding: 2.5rem 2rem;
   background-color: #181818;
   z-index: 1000;
 }
@@ -27,11 +25,9 @@ body {
   position: relative;
   cursor: pointer;
 
-  /* fix clipped descender */
-  line-height: 1.2;          /* ⬅ more vertical room */
-  padding-bottom: 0.2rem;    /* ⬅ pushes bottom edge down a bit */
+  line-height: 1.2;
+  padding-bottom: 0.2rem;
 
-  /* animated gradient text */
   background: linear-gradient(90deg, #ffffff, #ffd600, #ffffff);
   background-size: 200% 100%;
   -webkit-background-clip: text;
@@ -43,12 +39,11 @@ body {
     transform 0.2s ease;
 }
 
-/* underline that slides in on hover */
 .navbar-left::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -0.35rem;          /* ⬅ move underline slightly lower */
+  bottom: -0.35rem;
   height: 3px;
   width: 0;
   background: #ffd600;
@@ -80,7 +75,6 @@ body {
   cursor: pointer;
   font-size: 0.9rem;
 
-  /* smooth hover animation */
   transition:
     color 0.25s ease,
     border-color 0.25s ease,
@@ -89,7 +83,6 @@ body {
     transform 0.15s ease;
 }
 
-/* gold/yellow “light-up” hover */
 .navbar-right button:hover {
   color: var(--accent, #ffd600);
   border-color: var(--accent, #ffd600);
@@ -102,8 +95,44 @@ body {
   transform: translateY(-1px);
 }
 
-/* slight press effect */
 .navbar-right button:active {
   transform: translateY(0);
   box-shadow: 0 0 8px rgba(255, 214, 0, 0.6);
+}
+
+/* =========================
+   RESPONSIVE – NAVBAR
+   ========================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.25rem;
+    flex-direction: column;
+    align-items: center;   /* center everything horizontally */
+    gap: 0.75rem;
+  }
+
+  .navbar-left {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;           /* so the text-align works nicely */
+  }
+
+  .navbar-right {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .navbar-right button {
+    padding: 0.25rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .navbar-right {
+    justify-content: center;
+  }
 }

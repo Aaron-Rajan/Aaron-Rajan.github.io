@@ -1,16 +1,12 @@
-:root {
-  --accent: #ffd600;
-}
-
 /* =========================
    EXPERIENCE SECTION
    ========================= */
 
 .experience-section {
-  padding: 0.5rem 0 4rem;  /* full-width bg, no side padding */
+  padding: 6rem 0 4rem;  /* space for navbar + bottom */
 }
 
-/* heading is constrained + centered to match the timeline width */
+/* heading */
 .experience-heading {
   width: 80%;
   margin: 0 auto 3rem;
@@ -20,17 +16,16 @@
 }
 
 /* =========================
-   TIMELINE LAYOUT
+   TIMELINE LAYOUT (DESKTOP)
    ========================= */
 
 .timeline {
   position: relative;
-  width: 80%;          /* takes 80% of viewport */
-  margin: 0 auto;      /* centered */
+  width: 80%;
+  margin: 0 auto;
   padding: 2rem 0 4rem;
 }
 
-/* vertical line down the center of this 80% container */
 .timeline::before {
   content: "";
   position: absolute;
@@ -43,18 +38,17 @@
   z-index: 0;
 }
 
-/* each row: 2-column grid: [left side] [right side] */
 .timeline-item {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;        /* helps keep row content centered vertically */
+  align-items: center;
   margin: 3rem 0;
   width: 100%;
 }
 
 /* =========================
-   CARDS
+   CARDS (DESKTOP)
    ========================= */
 
 .timeline-card {
@@ -64,23 +58,21 @@
   padding: 1.5rem 1.8rem;
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.6);
   position: relative;
-  z-index: 1;                 /* above the line */
-  max-width: 40rem;           /* same as before */
+  z-index: 1;
+  max-width: 40rem;
   width: 100%;
   box-sizing: border-box;
 }
 
-/* odd items: card on LEFT side, extending outward */
 .timeline-item:nth-child(odd) .timeline-card {
   grid-column: 1 / 2;
-  justify-self: end;          /* right edge towards the center line */
-  margin-right: 3rem;         /* gap from icon/line */
+  justify-self: end;
+  margin-right: 3rem;
 }
 
-/* even items: card on RIGHT side, extending outward */
 .timeline-item:nth-child(even) .timeline-card {
   grid-column: 2 / 3;
-  justify-self: start;        /* left edge towards the center line */
+  justify-self: start;
   margin-left: 3rem;
 }
 
@@ -106,16 +98,14 @@
 }
 
 /* =========================
-   ICON ON CENTER LINE
+   ICON ON CENTER LINE (DESKTOP)
    ========================= */
 
-/* One icon per row, always on the center line, vertically centered
-   relative to that row's content (i.e., its card). */
 .timeline-icon {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);   /* center on the row */
+  transform: translate(-50%, -50%);
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -171,9 +161,7 @@
   font-size: 0.9rem;
 }
 
-/* =========================
-   EXPERIENCE CARD LINK ICON
-   ========================= */
+/* EXPERIENCE CARD LINK ICON */
 
 .exp-links {
   margin-top: 0.9rem;
@@ -182,7 +170,7 @@
 }
 
 .exp-links a {
-  font-size: 1.1rem;            /* similar size to project icons */
+  font-size: 1.1rem;
   color: #fff;
   display: inline-block;
 }
@@ -192,60 +180,77 @@
 }
 
 @keyframes spin-exp-link {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
 }
 
 /* =========================
-   RESPONSIVE
+   RESPONSIVE – EXPERIENCE
    ========================= */
 
+/* Tablet-ish: tighten widths */
 @media (max-width: 900px) {
   .experience-heading {
     width: 90%;
-    text-align: center;
   }
 
   .timeline {
     width: 90%;
   }
+}
 
+/* Mobile: centered stacked cards */
+@media (max-width: 768px) {
+  .timeline {
+    width: 90%;
+    padding: 1.5rem 0 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* hide central line */
   .timeline::before {
-    left: 24px;
-    transform: none;
+    display: none;
   }
 
-  /* Stacked layout: icon on the left, card on the right */
   .timeline-item {
-    grid-template-columns: 80px 1fr;
-    align-items: flex-start;
+    width: 100%;
+    max-width: 420px;          /* controls card width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5rem 0;
   }
 
-  .timeline-card {
-    grid-column: 2 / 3;
-    justify-self: stretch;
-    max-width: none;
-    margin: 0 0 0 1.25rem;
-  }
-
+  /* icon centered above card */
   .timeline-icon {
-    position: static;
+    position: relative;
+    left: auto;
+    top: auto;
     transform: none;
+    margin: 0 auto 1rem;
     width: 56px;
     height: 56px;
     border-width: 3px;
-    margin-top: 0.5rem;
   }
 
+  /* full-width-ish centered card */
+  .timeline-card {
+    max-width: 420px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* make sure odd/even overrides don't push them sideways */
+  .timeline-item:nth-child(odd) .timeline-card,
+  .timeline-item:nth-child(even) .timeline-card {
+    margin: 0 auto;
+  }
+
+  /* remove little notches on mobile */
   .timeline-item:nth-child(odd) .timeline-card::before,
   .timeline-item:nth-child(even) .timeline-card::before {
-    left: -20px;
-    right: auto;
-    border-right-color: #1f1f1f;
-    border-left-color: transparent;
+    display: none;
   }
 }
